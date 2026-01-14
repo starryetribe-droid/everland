@@ -14,7 +14,7 @@ export const Overview: React.FC = () => {
         },
         {
             part: "Chapter 2",
-            title: "Goal",
+            title: "Objective",
             desc: "K-콘텐츠 경험의 허브",
             icon: "fa-chess-knight",
             id: "interim-2"
@@ -64,13 +64,13 @@ export const Overview: React.FC = () => {
                                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-50"></div>
 
                                 <div className="mt-2 flex flex-col h-full w-full">
-                                    <span className="text-sm font-bold text-gray-400 mb-1 uppercase tracking-wider block order-1">{item.part}</span>
+                                    <span className="text-lg font-bold text-gray-400 mb-1 uppercase tracking-wider block order-1">{item.part}</span>
 
                                     <h3 className="text-3xl font-black text-monimo-black mb-2 transition-colors order-2">
                                         {item.title}
                                     </h3>
 
-                                    <p className="text-base font-medium text-gray-500 leading-tight whitespace-nowrap order-3 mt-auto tracking-tight">
+                                    <p className="text-lg font-medium text-gray-500 leading-tight whitespace-nowrap order-3 mt-auto tracking-tight">
                                         {item.desc}
                                     </p>
                                 </div>

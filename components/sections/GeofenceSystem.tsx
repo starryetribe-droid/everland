@@ -13,7 +13,7 @@ export const GeofenceSystem: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-[15px] uppercase mb-2 block">Journey Phase 1:입장</span>
+                        <span className="text-[#7730D0] font-bold tracking-wider text-lg uppercase mb-2 block">Journey Phase 1:입장</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight">
                             지오펜싱(Geofencing) 기반, 헌터모드 ON!
                         </h2>
@@ -25,7 +25,7 @@ export const GeofenceSystem: React.FC = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-[#7730D0]">
                                     <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.146.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
                                 </svg>
-                                <span className="text-gray-700 font-bold text-sm tracking-wide">정문&진입로</span>
+                                <span className="text-gray-700 font-bold text-lg tracking-wide">정문&진입로</span>
                             </div>
                         </div>
                     </FadeIn>
@@ -58,9 +58,9 @@ export const GeofenceSystem: React.FC = () => {
                         <FadeIn delay={400} className="relative pl-8 border-l-[3px] border-gray-200">
                             <div className="absolute -left-[11px] top-0 w-5 h-5 bg-[#7730D0] rounded-full ring-4 ring-white"></div>
                             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                                <span className="text-[#7730D0] font-bold text-sm tracking-wider uppercase mb-1 block">Step 1: Entry</span>
+                                <span className="text-[#7730D0] font-bold text-lg tracking-wider uppercase mb-1 block">Step 1: Entry</span>
                                 <h3 className="text-2xl font-extrabold text-gray-900 mb-2">진입 (Entry)</h3>
-                                <p className="text-gray-600 font-medium leading-relaxed">
+                                <p className="text-gray-600 font-medium leading-relaxed text-lg">
                                     사용자가 테마파크의 가상 경계(Geofence)를 통과하면 시스템이 이를 인식합니다.
                                 </p>
                             </div>
@@ -70,9 +70,9 @@ export const GeofenceSystem: React.FC = () => {
                         <FadeIn delay={600} className="relative pl-8 border-l-[3px] border-gray-200">
                             <div className="absolute -left-[11px] top-0 w-5 h-5 bg-[#D476AB] rounded-full ring-4 ring-white"></div>
                             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                                <span className="text-[#D476AB] font-bold text-sm tracking-wider uppercase mb-1 block">Step 2: Detection</span>
+                                <span className="text-[#D476AB] font-bold text-lg tracking-wider uppercase mb-1 block">Step 2: Detection</span>
                                 <h3 className="text-2xl font-extrabold text-gray-900 mb-2">감지 (Detection)</h3>
-                                <p className="text-gray-600 font-medium leading-relaxed">
+                                <p className="text-gray-600 font-medium leading-relaxed text-lg">
                                     GPS 및 비콘 센서가 사용자의 정확한 위치를 파악하고, 별도의 실행 없이 앱을 대기 상태로 활성화합니다.
                                 </p>
                             </div>
@@ -82,9 +82,9 @@ export const GeofenceSystem: React.FC = () => {
                         <FadeIn delay={800} className="relative pl-8 border-l-[3px] border-transparent">
                             <div className="absolute -left-[11px] top-0 w-5 h-5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full ring-4 ring-white"></div>
                             <div className="bg-gradient-to-br from-[#7730D0] to-[#D476AB] p-6 rounded-2xl shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
-                                <span className="text-white/80 font-bold text-sm tracking-wider uppercase mb-1 block">Step 3: Immersion</span>
+                                <span className="text-white/80 font-bold text-lg tracking-wider uppercase mb-1 block">Step 3: Immersion</span>
                                 <h3 className="text-2xl font-extrabold text-white mb-2">몰입 (Immersion)</h3>
-                                <p className="text-white/90 font-medium leading-relaxed">
+                                <p className="text-white/90 font-medium leading-relaxed text-lg">
                                     'K-Drama 헌터스'의 환영 메시지와 함께 세계관으로의 몰입이 시작됩니다.
                                 </p>
                             </div>

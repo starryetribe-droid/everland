@@ -16,6 +16,7 @@ import { RhythmTraining } from './components/sections/RhythmTraining';
 import { SocialChallenge } from './components/sections/SocialChallenge';
 import { SingAlongAttack } from './components/sections/SingAlongAttack';
 import { FinalePerformance } from './components/sections/FinalePerformance';
+import { ExpectedEffects } from './components/sections/ExpectedEffects';
 import { NfcKeyring } from './components/sections/NfcKeyring';
 // import { B2BPivot } from './components/sections/B2BPivot';
 import { InterimSection } from './components/sections/InterimSection';
@@ -106,6 +107,7 @@ function App() {
         <NfcKeyring />
         <SingAlongAttack />
         <FinalePerformance />
+        <ExpectedEffects />
 
 
         {/* End of Active Content */}

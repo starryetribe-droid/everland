@@ -8,11 +8,11 @@ export const MarketContext: React.FC = () => {
             <div className="max-w-[1280px] mx-auto px-6">
                 <FadeIn>
                     <div className="text-center mb-16">
-                        <span className="text-monimo-blue font-bold tracking-wider text-[15px] uppercase mb-3 block">MARKET CONTEXT</span>
+                        <span className="text-monimo-blue font-bold tracking-wider text-lg uppercase mb-3 block">MARKET CONTEXT</span>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-monimo-black leading-tight">
                             지금, 현대인의 마음 건강
                         </h2>
-                        <p className="mt-4 text-gray-500 text-lg">
+                        <p className="mt-4 text-gray-500 text-xl">
                             최근 3개년(2023-2025) 기준 나타나는 현대인 마음 건강 현황
                         </p>
                     </div>
@@ -36,14 +36,14 @@ export const MarketContext: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="space-y-2 text-gray-600 font-medium leading-relaxed mb-8 flex-1">
+                            <div className="space-y-2 text-gray-600 font-medium leading-relaxed mb-8 flex-1 text-lg">
                                 <p>2020년 83만 명 수준에서</p>
                                 <p>2024년 110만 명으로 <span className="text-monimo-black font-bold">30% 넘게 증가.</span></p>
                                 <p>연평균 7.4% 증가로 가파른 증가세를 보이고 있습니다.</p>
                             </div>
 
                             <div className="pt-6 border-t border-gray-100 mt-auto">
-                                <cite className="text-xs text-gray-400 not-italic">*국민건강보험공단</cite>
+                                <cite className="text-lg text-gray-400 not-italic">*국민건강보험공단</cite>
                             </div>
                         </div>
                     </FadeIn>
@@ -65,14 +65,14 @@ export const MarketContext: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="space-y-2 text-gray-600 font-medium leading-relaxed mb-8 flex-1">
+                            <div className="space-y-2 text-gray-600 font-medium leading-relaxed mb-8 flex-1 text-lg">
                                 <p>2024년 환자수 12만 명 돌파.</p>
                                 <p>특히 <span className="text-monimo-black font-bold">30대 여성 진료비</span>는</p>
                                 <p>5년 전 대비 10배 이상 폭증했습니다.</p>
                             </div>
 
                             <div className="pt-6 border-t border-gray-100 mt-auto">
-                                <cite className="text-xs text-gray-400 not-italic">*건강보험심사평가원</cite>
+                                <cite className="text-lg text-gray-400 not-italic">*건강보험심사평가원</cite>
                             </div>
                         </div>
                     </FadeIn>
@@ -94,14 +94,14 @@ export const MarketContext: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="space-y-2 text-gray-600 font-medium leading-relaxed mb-8 flex-1">
+                            <div className="space-y-2 text-gray-600 font-medium leading-relaxed mb-8 flex-1 text-lg">
                                 <p>과도한 스마트폰 이용으로</p>
                                 <p><span className="text-monimo-black font-bold">정신건강 및 인지기능</span>에</p>
                                 <p>영향을 받고 있습니다.</p>
                             </div>
 
                             <div className="pt-6 border-t border-gray-100 mt-auto">
-                                <cite className="text-xs text-gray-400 not-italic">*과학기술정보통신부</cite>
+                                <cite className="text-lg text-gray-400 not-italic">*과학기술정보통신부</cite>
                             </div>
                         </div>
                     </FadeIn>

@@ -80,7 +80,7 @@ export const HuntersJourney: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-[15px] uppercase mb-2 block">Immersive Experience</span>
+                        <span className="text-[#7730D0] font-bold tracking-wider text-lg uppercase mb-2 block">Immersive Experience</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep">
                             Everland: The Last Defense Line of Demon Hunters<br /> <br className="md:hidden" />
                             <span className="text-[#7730D0]">K-IP를 활용한 하루 완성 몰입형 체험</span>
@@ -114,12 +114,12 @@ export const HuntersJourney: React.FC = () => {
 
                                                 {/* Badges Overlay on Image */}
                                                 <div className="absolute top-4 left-4 z-10">
-                                                    <span className="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-[12px] font-bold border border-white/30">
+                                                    <span className="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-lg font-bold border border-white/30">
                                                         {step.step}
                                                     </span>
                                                 </div>
                                                 <div className="absolute top-4 right-4 z-10">
-                                                    <span className="text-white/90 text-[13px] font-medium drop-shadow-md">{step.time}</span>
+                                                    <span className="text-white/90 text-lg font-medium drop-shadow-md">{step.time}</span>
                                                 </div>
                                             </>
                                         ) : (
@@ -132,10 +132,10 @@ export const HuntersJourney: React.FC = () => {
                                                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent pointer-events-none"></div>
 
                                                 <div className="flex justify-between items-start relative z-10">
-                                                    <span className="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-[12px] font-bold border border-white/30">
+                                                    <span className="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-lg font-bold border border-white/30">
                                                         {step.step}
                                                     </span>
-                                                    <span className="text-white/90 text-[13px] font-medium">{step.time}</span>
+                                                    <span className="text-white/90 text-lg font-medium">{step.time}</span>
                                                 </div>
 
                                                 <div className="text-white text-4xl mb-2 self-center drop-shadow-md relative z-10">
@@ -148,8 +148,8 @@ export const HuntersJourney: React.FC = () => {
                                     {/* Content Body */}
                                     <div className="p-6 flex flex-col flex-1 text-center lg:text-left">
                                         <h3 className="text-xl font-bold text-gray-900 mb-2 leading-tight break-keep">{step.title}</h3>
-                                        <p className={`text-[14px] font-bold mb-3 ${step.textInfo}`}>{step.desc}</p>
-                                        <p className="text-[13px] text-gray-500 leading-relaxed font-medium break-keep mb-4 flex-1">
+                                        <p className={`text-lg font-bold mb-3 ${step.textInfo}`}>{step.desc}</p>
+                                        <p className="text-lg text-gray-500 leading-relaxed font-medium break-keep mb-4 flex-1">
                                             {step.detail}
                                         </p>
 
@@ -157,7 +157,7 @@ export const HuntersJourney: React.FC = () => {
                                             <div className="mt-auto pt-4 border-t border-gray-100">
                                                 <div className="flex items-center gap-2 justify-center lg:justify-start">
                                                     <i className="fa-solid fa-file-invoice text-gray-400"></i>
-                                                    <span className="text-[13px] text-gray-600 font-bold">{step.subDetail}</span>
+                                                    <span className="text-lg text-gray-600 font-bold">{step.subDetail}</span>
                                                 </div>
                                             </div>
                                         )}
@@ -173,7 +173,7 @@ export const HuntersJourney: React.FC = () => {
                     <div className="bg-[#7730D0]/5 rounded-[2rem] p-8 border border-[#7730D0]/10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
                         <div>
                             <h4 className="text-xl font-bold text-[#7730D0] mb-2"><i className="fa-solid fa-wand-magic-sparkles mr-2"></i>Digital Hunter Report</h4>
-                            <p className="text-gray-600 font-medium text-sm md:text-base">
+                            <p className="text-gray-600 font-medium text-lg">
                                 활동 기록이 담긴 리포트를 제공하며 SNS 공유 및 재방문을 유도합니다.
                             </p>
                         </div>

@@ -12,11 +12,11 @@ export const DigitalLayering: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-8 max-w-3xl">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-[15px] uppercase mb-2 block">Sustainable Innovation</span>
+                        <span className="text-[#7730D0] font-bold tracking-wider text-lg uppercase mb-2 block">Sustainable Innovation</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight mb-4">
                             데이터와 공간이 결합된,<br /><span className="text-[#7730D0]">하이퍼 커넥티드 플랫폼</span>
                         </h2>
-                        <p className="text-lg text-gray-600 font-medium leading-relaxed">
+                        <p className="text-xl text-gray-600 font-medium leading-relaxed">
                             기존의 물리적 공간과 시설은 그대로 유지하면서,<br />
                             <span className="text-[#7730D0] font-bold">Digital Content Layer</span>를 통해 K-IP를 무한히 교체하고 확장합니다.
                         </p>

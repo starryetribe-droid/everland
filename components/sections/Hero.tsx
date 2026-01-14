@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-5xl mx-auto px-6 text-center z-10 relative">
         <FadeIn>
-          <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/80 backdrop-blur-md shadow-sm border border-white text-[#7730D0] text-[15px] font-bold mb-10 ring-1 ring-[#7730D0]/20">
+          <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/80 backdrop-blur-md shadow-sm border border-white text-[#7730D0] text-lg font-bold mb-10 ring-1 ring-[#7730D0]/20">
             <span className="w-2.5 h-2.5 rounded-full bg-[#7730D0] animate-pulse"></span>
             ETRIBE X EVERLAND
           </div>

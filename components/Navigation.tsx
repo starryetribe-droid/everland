@@ -29,6 +29,7 @@ export const Navbar: React.FC = () => {
     { href: "#nfc-keyring", label: "NFC Keyring" },
     { href: "#sing-along-attack", label: "Sing Along" },
     { href: "#finale-performance", label: "Finale" },
+    { href: "#expected-effects", label: "Chapter 6. Effect" },
   ];
 
   useEffect(() => {

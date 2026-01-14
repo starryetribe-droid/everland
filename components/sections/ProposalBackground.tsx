@@ -10,7 +10,7 @@ export const ProposalBackground: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-[15px] uppercase mb-2 block">제안 배경</span>
+                        <span className="text-[#7730D0] font-bold tracking-wider text-lg uppercase mb-2 block">Trend</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight">
                             글로벌 K-콘텐츠의 물결
                         </h2>
@@ -25,7 +25,7 @@ export const ProposalBackground: React.FC = () => {
                             <i className="fa-solid fa-earth-asia"></i>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">글로벌 팬덤 데이터</h3>
-                        <p className="text-gray-600 font-medium leading-relaxed">
+                        <p className="text-gray-600 font-medium leading-relaxed text-lg">
                             전 세계 K-컬처 팬 <span className="text-blue-600 font-bold">2억 2,500만 명</span> 돌파,<br />
                             연간 수출 <span className="text-blue-600 font-bold">130억 달러</span> 성장.
                         </p>
@@ -37,9 +37,9 @@ export const ProposalBackground: React.FC = () => {
                             <i className="fa-solid fa-plane-arrival"></i>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">관광 시장 점유율</h3>
-                        <p className="text-gray-600 font-medium leading-relaxed">
+                        <p className="text-gray-600 font-medium leading-relaxed text-lg">
                             연간 방한객 1,870만 명(2025년)<br />
-                            에버랜드 국내외 방문객<span className="text-purple-600 font-bold">연 600만 명</span> 방문.
+                            에버랜드 국내외 방문객 <span className="text-purple-600 font-bold">연 600만 명</span> 방문.
                         </p>
                     </FadeIn>
 
@@ -49,7 +49,7 @@ export const ProposalBackground: React.FC = () => {
                             <i className="fa-solid fa-arrow-trend-up"></i>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">기술 트렌드</h3>
-                        <p className="text-gray-600 font-medium leading-relaxed">
+                        <p className="text-gray-600 font-medium leading-relaxed text-lg">
                             2033년 테마파크 시장 <span className="text-pink-600 font-bold">1,106억 달러</span> 성장 전망,<br />
                             AR·모바일 기술 표준화.
                         </p>
@@ -61,7 +61,7 @@ export const ProposalBackground: React.FC = () => {
                     <div className="bg-gradient-to-r from-[#7730D0] to-[#D476AB] rounded-3xl p-10 text-center text-white shadow-xl relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                         <div className="relative z-10">
-                            <span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-sm font-bold tracking-wider uppercase mb-4 border border-white/30">Insight</span>
+                            <span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-lg font-bold tracking-wider uppercase mb-4 border border-white/30">Insight</span>
                             <h3 className="text-2xl md:text-3xl font-extrabold leading-normal">
                                 "물리적 한계를 넘는 <span className="text-[#FFD700]">디지털 레이어의 확장성</span>이 필요합니다."
                             </h3>
