@@ -7,17 +7,17 @@ import singAlongNewsImage from '../../src/assets/images/sing_along_news.png';
 
 export const SingAlongAttack: React.FC = () => {
     return (
-        <SectionWrapper id="sing-along-attack" className="bg-white relative overflow-hidden" pageNumber={18}>
+        <SectionWrapper id="sing-along-attack" className="bg-white relative overflow-hidden" pageNumber={21}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#DAA520] font-bold tracking-wider text-[15px] uppercase mb-2 block">Journey Phase 4: 공동체 챌린지</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight">
+                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 4: 공동체 챌린지</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             떼창(Sing-along) Attack, 데시벨 챌린지
                         </h2>
-                        <p className="mt-4 text-gray-600 font-medium">
+                        <p className="mt-4 text-gray-600 font-medium text-xl md:text-2xl leading-relaxed break-keep">
                             함께 부르는 노래, 하나 되는 순간. 그랜드 스테이지에서 펼쳐지는 압도적인 떼창 에너지.
                         </p>
                         <div className="mt-8 flex justify-center">

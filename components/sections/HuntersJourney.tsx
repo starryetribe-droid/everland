@@ -74,14 +74,14 @@ export const HuntersJourney: React.FC = () => {
     ];
 
     return (
-        <SectionWrapper id="hunters-journey" className="bg-white relative overflow-hidden" pageNumber={13}>
+        <SectionWrapper id="hunters-journey" className="bg-white relative overflow-hidden" pageNumber={15}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-lg uppercase mb-2 block">Immersive Experience</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep">
+                        <span className="text-[#7730D0] font-bold tracking-wider text-xl uppercase mb-3 block">Immersive Experience</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             Everland: The Last Defense Line of Demon Hunters<br /> <br className="md:hidden" />
                             <span className="text-[#7730D0]">K-IP를 활용한 하루 완성 몰입형 체험</span>
                         </h2>

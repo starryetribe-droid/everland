@@ -9,17 +9,17 @@ export const RhythmTraining: React.FC = () => {
     const [theme, setTheme] = useState<'texpress' | 'forest'>('texpress');
 
     return (
-        <SectionWrapper id="rhythm-training" className="bg-white relative overflow-hidden" pageNumber={15}>
+        <SectionWrapper id="rhythm-training" className="bg-white relative overflow-hidden" pageNumber={18}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-[15px] uppercase mb-2 block">Journey Phase 2: 대기</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight">
+                        <span className="text-[#7730D0] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 2: 대기</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             지루한 시간을 리듬 미션으로 전환
                         </h2>
-                        <p className="mt-4 text-gray-600 font-medium">
+                        <p className="mt-4 text-gray-600 font-medium text-xl md:text-2xl leading-relaxed break-keep">
                             대기 시간을 활용한 모바일 리듬 게임 플레이로 지루함을 즐거움으로 전환합니다.
                         </p>
                         <div className="mt-8 flex justify-center">

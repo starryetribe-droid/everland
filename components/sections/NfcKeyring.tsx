@@ -3,20 +3,21 @@ import { SectionWrapper } from './SectionWrapper';
 import { FadeIn } from '../ui/FadeIn';
 
 import nfcKeyringImage from '../../src/assets/images/nfc_keyring_prototype_final.jpg';
+import collectionImage from '../../src/assets/images/mobile_photocard_gallery_prototype.png';
 
 export const NfcKeyring: React.FC = () => {
     return (
-        <SectionWrapper id="nfc-keyring" className="bg-white relative overflow-hidden" pageNumber={17}>
+        <SectionWrapper id="nfc-keyring" className="bg-white relative overflow-hidden" pageNumber={20}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#DAA520] font-bold tracking-wider text-lg uppercase mb-2 block">Journey Phase 3: 식사 & 휴식</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight">
+                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 3: 식사 & 휴식</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             NFC 키링 & 리워드 콜렉션
                         </h2>
-                        <p className="mt-4 text-gray-600 font-medium">
+                        <p className="mt-4 text-gray-600 font-medium text-xl md:text-2xl leading-relaxed break-keep">
                             한국적인 디자인의 NFC 키링으로 특별한 수집 욕구와 재미를 선사합니다.
                         </p>
                         <div className="mt-8 flex justify-center">
@@ -35,13 +36,19 @@ export const NfcKeyring: React.FC = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
 
                     {/* Visual Area (Left) */}
-                    <FadeIn delay={200} className="w-full lg:w-1/2 flex justify-center relative">
-                        <div className="relative w-full max-w-[600px] aspect-video flex items-center justify-center">
-                            {/* Glowing Background Effect */}
-                            <div className="absolute top-1/2 left-1/2 w-[100%] h-[100%] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-tr from-[#DAA520]/20 to-[#FFD700]/10 rounded-xl blur-[60px] -z-10"></div>
+                    {/* Visual Area (Left) */}
+                    <FadeIn delay={200} className="w-full lg:w-1/2 flex flex-row items-center justify-center gap-4 relative">
+                        {/* Glowing Background Effect - Shared */}
+                        <div className="absolute top-1/2 left-1/2 w-[120%] h-[120%] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-tr from-[#DAA520]/20 to-[#FFD700]/10 rounded-full blur-[80px] -z-10"></div>
 
-                            {/* Main Image */}
-                            <img src={nfcKeyringImage} alt="NFC Keyring" className="w-full h-auto transform drop-shadow-2xl relative z-10 rounded-3xl border-4 border-white/50 animate-[float_5s_ease-in-out_infinite]" />
+                        {/* Left: Mobile Photo Card Gallery (New) */}
+                        <div className="relative w-2/5 max-w-[240px] z-20">
+                            <img src={collectionImage} alt="Mobile Photo Card Gallery Prototype" className="w-full h-auto transform drop-shadow-2xl rounded-3xl border-4 border-gray-900/10 rotate-[-5deg] hover:rotate-0 transition-transform duration-500" />
+                        </div>
+
+                        {/* Right: NFC Keyring */}
+                        <div className="relative w-3/5 max-w-[320px] z-10 -ml-8">
+                            <img src={nfcKeyringImage} alt="NFC Keyring" className="w-full h-auto transform drop-shadow-xl relative rounded-3xl border-4 border-white/50 animate-[float_5s_ease-in-out_infinite]" />
                         </div>
                     </FadeIn>
 

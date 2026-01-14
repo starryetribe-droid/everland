@@ -4,14 +4,14 @@ import { FadeIn } from '../ui/FadeIn';
 
 export const GlobalCases: React.FC = () => {
     return (
-        <SectionWrapper id="global-cases" className="bg-gray-50 relative overflow-hidden" pageNumber={9}>
+        <SectionWrapper id="global-cases" className="bg-gray-50 relative overflow-hidden" pageNumber={8}>
             <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-[15px] uppercase mb-2 block">Chapter 2-2</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight">
+                        <span className="text-[#7730D0] font-bold tracking-wider text-xl uppercase mb-3 block">Chapter 2-2</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             글로벌 사례 및 사업 필요성
                         </h2>
                     </FadeIn>

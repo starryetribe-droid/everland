@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navigation';
+import { DemonHuntersConcept } from './components/sections/DemonHuntersConcept';
+import { DigitalRelay } from './components/sections/DigitalRelay';
 
 // import { Expertise } from './components/sections/Expertise';
 import { Hero } from './components/sections/Hero';
@@ -18,6 +20,8 @@ import { SingAlongAttack } from './components/sections/SingAlongAttack';
 import { FinalePerformance } from './components/sections/FinalePerformance';
 import { ExpectedEffects } from './components/sections/ExpectedEffects';
 import { NfcKeyring } from './components/sections/NfcKeyring';
+import { FromEtribe } from './components/sections/FromEtribe';
+
 // import { B2BPivot } from './components/sections/B2BPivot';
 import { InterimSection } from './components/sections/InterimSection';
 
@@ -76,38 +80,59 @@ function App() {
         {/* Interim: Market (Page 6) */}
         <InterimSection
           id="interim-mkt"
-          title="Concept"
-          description="글로벌 K-콘텐츠 몰입형 플랫폼"
+          title="Market Insight"
+          description="시장 현황과 사업 필요성"
           pageNumber={6}
           theme="blue"
           label="Chapter 3"
         />
         <MarketEnvironment />
 
-        {/* Interim: Global Cases (Page 8) */}
+        <GlobalCases />
+
+        {/* Interim: Global Cases (Page 9) */}
         <InterimSection
           id="interim-global"
           title="Strategy"
           description="하이퍼 커넥티드 플랫폼"
-          pageNumber={8}
+          pageNumber={9}
           theme="blue"
           label="Chapter 4"
         />
-        <GlobalCases />
 
         <DigitalLayering />
         <ServiceModelComparison />
         <SeasonRotation />
 
 
+
+        {/* Interim: Concept (Page 13) */}
+        <InterimSection
+          id="interim-concept"
+          title="Concept"
+          description="글로벌 K-콘텐츠 몰입형 플랫폼"
+          pageNumber={13}
+          theme="blue"
+          label="Chapter 5"
+        />
+
+        {/* New Page 14 */}
+        <DemonHuntersConcept />
+
         <HuntersJourney />
         <GeofenceSystem />
+
+        {/* New Page 17 */}
+        <DigitalRelay />
+
         <RhythmTraining />
         <SocialChallenge />
         <NfcKeyring />
         <SingAlongAttack />
         <FinalePerformance />
         <ExpectedEffects />
+        <FromEtribe />
+
 
 
         {/* End of Active Content */}

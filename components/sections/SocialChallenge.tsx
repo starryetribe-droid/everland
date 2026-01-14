@@ -6,17 +6,17 @@ import socialFeedImage from '../../src/assets/images/social_challenge_new.jpg';
 
 export const SocialChallenge: React.FC = () => {
     return (
-        <SectionWrapper id="social-challenge" className="bg-white relative overflow-hidden" pageNumber={16}>
+        <SectionWrapper id="social-challenge" className="bg-white relative overflow-hidden" pageNumber={19}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-[15px] uppercase mb-2 block">Journey Phase 3: 식사 & 휴식</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight">
+                        <span className="text-[#7730D0] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 3: 식사 & 휴식</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             영화속 음식, 댄스 챌린지 & SNS 확산
                         </h2>
-                        <p className="mt-4 text-gray-600 font-medium">
+                        <p className="mt-4 text-gray-600 font-medium text-xl md:text-2xl leading-relaxed break-keep">
                             챌린지 콘텐츠로 플랫폼을 활성화하고, 숏폼을 SNS에 확산할 수 있는 구조를 완성합니다.
                         </p>
                         <div className="mt-8 flex justify-center">

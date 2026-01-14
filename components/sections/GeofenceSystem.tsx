@@ -7,17 +7,17 @@ import smartphone from '../../src/assets/images/geofence_smartphone_prototype_ne
 
 export const GeofenceSystem: React.FC = () => {
     return (
-        <SectionWrapper id="geofence-system" className="bg-gradient-to-b from-gray-50 to-white relative overflow-hidden" pageNumber={14}>
+        <SectionWrapper id="geofence-system" className="bg-gradient-to-b from-gray-50 to-white relative overflow-hidden" pageNumber={16}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#7730D0] font-bold tracking-wider text-lg uppercase mb-2 block">Journey Phase 1:입장</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight">
+                        <span className="text-[#7730D0] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 1:입장</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             지오펜싱(Geofencing) 기반, 헌터모드 ON!
                         </h2>
-                        <p className="mt-4 text-gray-600 font-medium">
+                        <p className="mt-4 text-gray-600 font-medium text-xl md:text-2xl leading-relaxed break-keep">
                             사용자의 위치를 인식하여 끊김 없는 몰입 경험을 시작합니다.
                         </p>
                         <div className="mt-8 flex justify-center">

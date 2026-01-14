@@ -6,19 +6,19 @@ import finaleImage from '../../src/assets/images/finale_performance_new.png';
 
 export const FinalePerformance: React.FC = () => {
     return (
-        <SectionWrapper id="finale-performance" className="bg-gradient-to-b from-yellow-900 via-yellow-600 to-black relative overflow-hidden text-white flex items-center justify-center min-h-screen" pageNumber={19}>
+        <SectionWrapper id="finale-performance" className="bg-gradient-to-b from-yellow-900 via-yellow-600 to-black relative overflow-hidden text-white flex items-center justify-center min-h-screen" pageNumber={22}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10 flex flex-col items-center justify-center h-full py-4">
 
-                <FadeIn className="mb-1">
+                <FadeIn className="mb-6">
                     <div className="inline-block">
-                        <span className="py-1 px-3 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-yellow-200 font-bold tracking-widest uppercase text-lg shadow-[0_0_15px_rgba(253,224,71,0.3)]">
-                            Grand Stage • 21:30
+                        <span className="py-2 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-yellow-200 font-bold tracking-widest uppercase text-xl md:text-2xl shadow-[0_0_15px_rgba(253,224,71,0.3)]">
+                            Grand Stage • 19:30
                         </span>
                     </div>
                 </FadeIn>
 
-                <FadeIn delay={200} className="mb-1">
-                    <h2 className="text-2xl md:text-4xl font-black text-white leading-tight drop-shadow-[0_0_25px_rgba(234,179,8,0.6)]">
+                <FadeIn delay={200} className="mb-4">
+                    <h2 className="text-3xl md:text-5xl font-black text-white leading-tight drop-shadow-[0_0_25px_rgba(234,179,8,0.6)]">
                         피날레: 황금 혼문 <span className="text-yellow-300">(Golden Honmoon)</span>
                     </h2>
                 </FadeIn>
