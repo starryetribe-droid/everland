@@ -38,8 +38,8 @@ export const ProposalBackground: React.FC = () => {
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">관광 시장 점유율</h3>
                         <p className="text-gray-600 font-medium leading-relaxed">
-                            연간 방한객 1,870만 명 중<br />
-                            에버랜드 <span className="text-purple-600 font-bold">연 600만 명</span> 방문.
+                            연간 방한객 1,870만 명(2025년)<br />
+                            에버랜드 국내외 방문객<span className="text-purple-600 font-bold">연 600만 명</span> 방문.
                         </p>
                     </FadeIn>
 
