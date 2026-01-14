@@ -6,7 +6,7 @@ import socialFeedImage from '../../src/assets/images/social_challenge_new.jpg';
 
 export const SocialChallenge: React.FC = () => {
     return (
-        <SectionWrapper id="social-challenge" className="bg-white relative overflow-hidden" pageNumber={17}>
+        <SectionWrapper id="social-challenge" className="bg-white relative overflow-hidden" pageNumber={16}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}

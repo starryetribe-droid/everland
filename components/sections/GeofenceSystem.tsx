@@ -7,7 +7,7 @@ import smartphone from '../../src/assets/images/geofence_smartphone_prototype_ne
 
 export const GeofenceSystem: React.FC = () => {
     return (
-        <SectionWrapper id="geofence-system" className="bg-gradient-to-b from-gray-50 to-white relative overflow-hidden" pageNumber={15}>
+        <SectionWrapper id="geofence-system" className="bg-gradient-to-b from-gray-50 to-white relative overflow-hidden" pageNumber={14}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}

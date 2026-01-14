@@ -1,29 +1,58 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const Navbar: React.FC = () => {
+  const [activeId, setActiveId] = useState<string>('');
+
   const menuItems = [
     { href: "#overview", label: "Overview" },
-    { href: "#interim-1", label: "Part 1. 신뢰도" },
-    { href: "#clinical-evidence", label: "임상 근거" },
-    { href: "#mental-health-checkup", label: "마음 검진" },
-    { href: "#expertise", label: "전문성" },
-    { href: "#brain-fitness", label: "브레인 피트니스" },
-    { href: "#interim-2", label: "Part 2. 전략" },
-    { href: "#key-pillars", label: "핵심 전략" },
-    { href: "#core-service", label: "핵심 서비스" },
-    { href: "#strategy-1", label: "전략 1: 능동 케어" },
-    { href: "#strategy-2", label: "전략 2: 데이터" },
-    { href: "#strategy-3", label: "전략 3: 연결성" },
-    { href: "#scenarios", label: "시나리오" },
-    { href: "#tcare-index", label: "T-Care 지표" },
-    { href: "#interim-3", label: "Part 3. B2B" },
-    { href: "#b2b-pivot", label: "B2B Pivot" },
-    { href: "#interim-4", label: "Part 4. Concept" },
-    { href: "#concept-pivot", label: "Concept Pivot" },
-    { href: "#gamification", label: "Gamification" },
-    { href: "#digital-detox", label: "Digital Detox" },
-    { href: "#ritual-life", label: "Ritual Life" },
+    { href: "#interim-bg", label: "Chapter 1. Trend" },
+    { href: "#proposal-background", label: "Background" },
+    { href: "#interim-obj", label: "Chapter 2. Objective" },
+    { href: "#proposal-objective", label: "Objective" },
+    { href: "#interim-mkt", label: "Chapter 3. Concept" },
+    { href: "#market-environment", label: "Market Env" },
+    { href: "#interim-global", label: "Chapter 4. Strategy" },
+    { href: "#global-cases", label: "Global Cases" },
+    { href: "#digital-layering", label: "Digital Layering" },
+    { href: "#service-model-comparison", label: "Service Model" },
+    { href: "#season-rotation", label: "Season Rotation" },
+    { href: "#hunters-journey", label: "Chapter 5. Journey" }, // Combined interim-journey and component since interim-journey was deleted? Wait, no, interim was deleted.
+    // Wait, check App.tsx again. Interim section for Page 13 was deleted. So HuntersJourney follows SeasonRotation directly?
+    // Let's re-verify App.tsx structure. 
+    // <ServiceModelComparison /> -> <SeasonRotation /> -> <HuntersJourney />
+    // So "Hunter's Journey" is the section.
+
+    { href: "#hunters-journey", label: "Hunter's Journey" },
+    { href: "#geofence-system", label: "Geofence System" },
+    { href: "#rhythm-training", label: "Rhythm Training" },
+    { href: "#social-challenge", label: "Social Challenge" },
+    { href: "#nfc-keyring", label: "NFC Keyring" },
+    { href: "#sing-along-attack", label: "Sing Along" },
+    { href: "#finale-performance", label: "Finale" },
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      {
+        root: document.querySelector('main'), // Observer root is the scroll container
+        threshold: 0.5, // Trigger when 50% visible
+      }
+    );
+
+    menuItems.forEach((item) => {
+      const element = document.getElementById(item.href.replace('#', ''));
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -36,22 +65,33 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed left-10 top-1/2 -translate-y-1/2 z-50 hidden xl:flex flex-col gap-8 select-none pointer-events-none">
-      {menuItems.map((item, index) => (
-        <a
-          key={index}
-          href={item.href}
-          onClick={(e) => handleClick(e, item.href)}
-          className="pointer-events-auto flex items-center gap-4 group transition-all duration-500"
-        >
-          {/* Minimal Line Indicator */}
-          <div className="w-6 h-[1px] bg-gray-200 group-hover:w-10 group-hover:bg-monimo-blue transition-all duration-500"></div>
+      {menuItems.map((item, index) => {
+        const isActive = activeId === item.href.replace('#', '');
+        return (
+          <a
+            key={index}
+            href={item.href}
+            onClick={(e) => handleClick(e, item.href)}
+            className="pointer-events-auto flex items-center gap-4 group transition-all duration-500"
+          >
+            {/* Minimal Line Indicator */}
+            <div
+              className={`h-[1px] transition-all duration-500 
+                ${isActive ? 'w-10 bg-monimo-blue' : 'w-6 bg-gray-200 group-hover:w-10 group-hover:bg-monimo-blue'}
+              `}
+            ></div>
 
-          {/* Label: Minimal Presence */}
-          <span className="text-[11px] font-bold text-gray-300 group-hover:text-monimo-blue transition-colors duration-500 tracking-tighter whitespace-nowrap">
-            {item.label}
-          </span>
-        </a>
-      ))}
+            {/* Label: Minimal Presence */}
+            <span
+              className={`text-[11px] font-bold transition-colors duration-500 tracking-tighter whitespace-nowrap
+                ${isActive ? 'text-monimo-blue' : 'text-gray-300 group-hover:text-monimo-blue'}
+              `}
+            >
+              {item.label}
+            </span>
+          </a>
+        );
+      })}
     </nav>
   );
 };

@@ -46,15 +46,15 @@ function App() {
     <div className="relative h-screen w-full bg-monimo-bg text-monimo-black font-sans overflow-hidden">
       <Navbar />
 
-      <main className="h-full w-full overflow-y-scroll scroll-smooth no-scrollbar">
+      <main className="h-full w-full overflow-y-scroll scroll-smooth no-scrollbar snap-y snap-mandatory">
         <Hero />
         <Overview />
 
         {/* Interim: Background (Page 2) */}
         <InterimSection
           id="interim-bg"
-          title="Background"
-          description="위기의 에버랜드, 변화의 시작"
+          title="Trend"
+          description="글로벌 K-콘텐츠의 물결"
           pageNumber={2}
           theme="blue"
           label="Chapter 1"
@@ -65,7 +65,7 @@ function App() {
         <InterimSection
           id="interim-obj"
           title="Objective"
-          description="단순 테마파크를 넘어\n무한한 경험의 플랫폼으로"
+          description="K-콘텐츠 경험의 허브"
           pageNumber={4}
           theme="blue"
           label="Chapter 2"
@@ -75,8 +75,8 @@ function App() {
         {/* Interim: Market (Page 6) */}
         <InterimSection
           id="interim-mkt"
-          title="Market Analysis"
-          description="글로벌 K-IP 트렌드와\n새로운 기회"
+          title="Concept"
+          description="글로벌 K-콘텐츠 몰입형 플랫폼"
           pageNumber={6}
           theme="blue"
           label="Chapter 3"
@@ -86,8 +86,8 @@ function App() {
         {/* Interim: Global Cases (Page 8) */}
         <InterimSection
           id="interim-global"
-          title="Global Insight"
-          description="성공적인 디지털 트랜스포메이션 사례"
+          title="Strategy"
+          description="하이퍼 커넥티드 플랫폼"
           pageNumber={8}
           theme="blue"
           label="Chapter 4"
@@ -98,15 +98,7 @@ function App() {
         <ServiceModelComparison />
         <SeasonRotation />
 
-        {/* Interim: Journey (Page 13) */}
-        <InterimSection
-          id="interim-journey"
-          title="Hunter's Journey"
-          description="새롭게 정의되는\n에버랜드에서의 경험"
-          pageNumber={13}
-          theme="blue"
-          label="Chapter 5"
-        />
+
         <HuntersJourney />
         <GeofenceSystem />
         <RhythmTraining />

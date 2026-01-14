@@ -9,7 +9,7 @@ export const RhythmTraining: React.FC = () => {
     const [theme, setTheme] = useState<'texpress' | 'forest'>('texpress');
 
     return (
-        <SectionWrapper id="rhythm-training" className="bg-white relative overflow-hidden" pageNumber={16}>
+        <SectionWrapper id="rhythm-training" className="bg-white relative overflow-hidden" pageNumber={15}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}

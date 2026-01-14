@@ -74,7 +74,7 @@ export const HuntersJourney: React.FC = () => {
     ];
 
     return (
-        <SectionWrapper id="hunters-journey" className="bg-white relative overflow-hidden" pageNumber={14}>
+        <SectionWrapper id="hunters-journey" className="bg-white relative overflow-hidden" pageNumber={13}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}

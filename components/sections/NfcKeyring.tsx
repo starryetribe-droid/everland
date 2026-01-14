@@ -7,7 +7,7 @@ import nfcCollectionImage from '../../src/assets/images/nfc_collection.png';
 
 export const NfcKeyring: React.FC = () => {
     return (
-        <SectionWrapper id="nfc-keyring" className="bg-white relative overflow-hidden" pageNumber={18}>
+        <SectionWrapper id="nfc-keyring" className="bg-white relative overflow-hidden" pageNumber={17}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}

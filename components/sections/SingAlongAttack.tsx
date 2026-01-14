@@ -7,7 +7,7 @@ import singAlongNewsImage from '../../src/assets/images/sing_along_news.png';
 
 export const SingAlongAttack: React.FC = () => {
     return (
-        <SectionWrapper id="sing-along-attack" className="bg-white relative overflow-hidden" pageNumber={19}>
+        <SectionWrapper id="sing-along-attack" className="bg-white relative overflow-hidden" pageNumber={18}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}

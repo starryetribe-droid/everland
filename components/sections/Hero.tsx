@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7730D0] to-[#D476AB]">K-IP Experience Platform</span>
           </h1>
           <p className="text-xl md:text-2xl text-monimo-gray max-w-3xl mx-auto leading-relaxed mb-12 font-medium break-keep">
-            2026. 01. 06.
+            2026. 01. 15.
           </p>
         </FadeIn>
       </div>

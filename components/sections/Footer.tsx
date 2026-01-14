@@ -22,7 +22,6 @@ export const Footer: React.FC = () => {
         <FadeIn delay={200} className="w-full">
           <div className="pb-8">
             <p className="text-monimo-gray text-sm mb-2 font-medium">Copyright 2025 © ETRIBE CORP. ALL RIGHT RESERVED</p>
-            <p className="text-gray-400 text-xs">이트라이브 X 고려대 마음건강연구소</p>
           </div>
         </FadeIn>
       </div>
