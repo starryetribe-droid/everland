@@ -4,32 +4,17 @@ export const Navbar: React.FC = () => {
   const [activeId, setActiveId] = useState<string>('');
 
   const menuItems = [
-    { href: "#overview", label: "Overview" },
-    { href: "#interim-bg", label: "Chapter 1. Trend" },
-    { href: "#proposal-background", label: "Background" },
-    { href: "#interim-obj", label: "Chapter 2. Objective" },
-    { href: "#proposal-objective", label: "Objective" },
-    { href: "#interim-mkt", label: "Chapter 3. Concept" },
-    { href: "#market-environment", label: "Market Env" },
-    { href: "#interim-global", label: "Chapter 4. Strategy" },
-    { href: "#global-cases", label: "Global Cases" },
-    { href: "#digital-layering", label: "Digital Layering" },
-    { href: "#service-model-comparison", label: "Service Model" },
-    { href: "#season-rotation", label: "Season Rotation" },
-    { href: "#hunters-journey", label: "Chapter 5. Journey" }, // Combined interim-journey and component since interim-journey was deleted? Wait, no, interim was deleted.
-    // Wait, check App.tsx again. Interim section for Page 13 was deleted. So HuntersJourney follows SeasonRotation directly?
-    // Let's re-verify App.tsx structure. 
-    // <ServiceModelComparison /> -> <SeasonRotation /> -> <HuntersJourney />
-    // So "Hunter's Journey" is the section.
-
-    { href: "#hunters-journey", label: "Hunter's Journey" },
-    { href: "#geofence-system", label: "Geofence System" },
-    { href: "#rhythm-training", label: "Rhythm Training" },
-    { href: "#social-challenge", label: "Social Challenge" },
-    { href: "#nfc-keyring", label: "NFC Keyring" },
-    { href: "#sing-along-attack", label: "Sing Along" },
-    { href: "#finale-performance", label: "Finale" },
-    { href: "#expected-effects", label: "Chapter 6. Effect" },
+    { href: '#interim-bg', label: 'Chapter 1. Trend' },
+    { href: '#interim-obj', label: 'Chapter 2. Objective' },
+    { href: '#interim-mkt', label: 'Chapter 3. Market Insight' },
+    { href: '#interim-global', label: 'Chapter 4. Strategy' },
+    { href: '#interim-concept', label: 'Chapter 5. Concept' },
+    { href: '#interim-plan', label: 'Chapter 6. Plan' },
+    { href: '#expected-effects', label: 'Chapter 7. 기대효과' },
+    { href: '#from-etribe', label: 'Chapter 8. Why ETRIBE?' },
+    { href: '#pilot-app-architecture', label: 'Chapter 9. 기술 구현 전략' },
+    { href: '#technical-requirements', label: 'Chapter 10. 상세 기술 요구사항' },
+    { href: '#pilot-budget', label: 'Chapter 11. 파일럿 예산' },
   ];
 
   useEffect(() => {

@@ -6,7 +6,7 @@ import finaleImage from '../../src/assets/images/finale_performance_new.png';
 
 export const FinalePerformance: React.FC = () => {
     return (
-        <SectionWrapper id="finale-performance" className="bg-gradient-to-b from-yellow-900 via-yellow-600 to-black relative overflow-hidden text-white flex items-center justify-center min-h-screen" pageNumber={22}>
+        <SectionWrapper id="finale-performance" className="bg-gradient-to-b from-yellow-900 via-yellow-600 to-black relative overflow-hidden text-white flex items-center justify-center min-h-screen" pageNumber={22} textColor="text-white/50">
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10 flex flex-col items-center justify-center h-full py-4">
 
                 <FadeIn className="mb-6">

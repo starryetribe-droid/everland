@@ -32,19 +32,16 @@ export const ExpectedEffects: React.FC = () => {
     ];
 
     return (
-        <SectionWrapper id="expected-effects" className="bg-white relative overflow-hidden" pageNumber={23}>
+        <SectionWrapper id="expected-effects" className="bg-white relative overflow-hidden" pageNumber={24}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10 h-full flex flex-col justify-center">
 
                 {/* Header */}
                 <div className="text-center mb-12">
                     <FadeIn>
-                        <span className="text-monimo-blue font-bold tracking-wider text-xl uppercase mb-3 block">Expected Effects</span>
+                        <span className="text-monimo-blue font-bold tracking-wider text-xl uppercase mb-3 block">Chapter.7 기대효과</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
-                            기대효과
+                            저비용 고효율의 디지털 전환,<br></br>지속 가능한 성장발판 마련
                         </h2>
-                        <p className="text-xl md:text-2xl text-gray-600 font-bold break-keep leading-relaxed">
-                            "저비용 고효율의 디지털 전환, 지속 가능한 성장발판 마련"
-                        </p>
                     </FadeIn>
                 </div>
 

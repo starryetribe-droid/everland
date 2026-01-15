@@ -10,8 +10,8 @@ export const PilotBudget: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-6">
                     <FadeIn>
-                        <span className="text-[#DAA520] font-bold tracking-wider text-lg uppercase mb-2 block">Chapter 10. 파일럿 예산 및 투입규모</span>
-                        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight break-keep mb-4">
+                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-2 block">Chapter 11. 파일럿 예산 및 투입규모</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight break-keep mb-4">
                             성공적인 파일럿 런칭을 위한 <span className="text-monimo-blue">최적의 리소스 계획</span>
                         </h2>
                     </FadeIn>

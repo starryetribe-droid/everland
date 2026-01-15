@@ -13,7 +13,7 @@ export const NfcKeyring: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 3: 식사 & 휴식</span>
+                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 4: 식사 & 휴식</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             NFC 키링 & 리워드 콜렉션
                         </h2>

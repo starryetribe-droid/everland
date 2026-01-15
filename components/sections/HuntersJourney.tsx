@@ -3,6 +3,7 @@ import { SectionWrapper } from './SectionWrapper';
 import { FadeIn } from '../ui/FadeIn';
 
 import step1Image from '../../src/assets/images/hunter_step1_new.jpg';
+import step2MoveImage from '../../src/assets/images/hunter_step2_move.jpg';
 import step2Image from '../../src/assets/images/hunter_step2.jpg';
 import step3Image from '../../src/assets/images/hunters_food.jpg';
 import step4Image from '../../src/assets/images/hunter_step4.jpg';
@@ -24,6 +25,18 @@ export const HuntersJourney: React.FC = () => {
         },
         {
             step: "2단계",
+            time: "이동",
+            title: "이동",
+            desc: "디지털 릴레이 게임으로 유대감 형성",
+            detail: "낯선 이들에게 닉네임을 통해 호롱불을 옮겨 주며 어두움이 몰려온 에버랜드를 밝혀내는 미션을 수행합니다.",
+            icon: "fa-person-walking",
+            color: "from-teal-400 to-teal-600",
+            bgInfo: "bg-teal-50",
+            textInfo: "text-teal-600",
+            image: step2MoveImage
+        },
+        {
+            step: "3단계",
             time: "오전/오후",
             title: "대기",
             desc: "지루한 대기 시간,협동 디펜스 게임으로!",
@@ -35,7 +48,7 @@ export const HuntersJourney: React.FC = () => {
             image: step2Image // Add image for step 2
         },
         {
-            step: "3단계",
+            step: "4단계",
             time: "점심",
             title: "식사 & 휴식",
             desc: "'영화속 음식과 댄스 인증샷 챌린지",
@@ -47,7 +60,7 @@ export const HuntersJourney: React.FC = () => {
             image: step3Image // Add image for step 3
         },
         {
-            step: "4단계",
+            step: "5단계",
             time: "오후",
             title: "공동체 챌린지",
             desc: "함께 한 목소리로 하나가 되는 최종 미션에 참여합니다.",
@@ -59,7 +72,7 @@ export const HuntersJourney: React.FC = () => {
             image: step4Image // Add image for step 4
         },
         {
-            step: "5단계",
+            step: "6단계",
             time: "야간/퇴장",
             title: "피날레 & 보상",
             desc: "골든 혼문 피날레",
@@ -74,7 +87,7 @@ export const HuntersJourney: React.FC = () => {
     ];
 
     return (
-        <SectionWrapper id="hunters-journey" className="bg-white relative overflow-hidden" pageNumber={15}>
+        <SectionWrapper id="hunters-journey" className="bg-white relative overflow-hidden" pageNumber={16}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
@@ -94,7 +107,7 @@ export const HuntersJourney: React.FC = () => {
                     {/* Desktop Connecting Line (Dashed simplified) */}
                     <div className="hidden lg:block absolute top-[160px] left-0 w-full h-1 bg-gradient-to-r from-emerald-200 via-purple-200 to-yellow-200 border-t-2 border-dashed border-gray-300 z-0"></div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4 relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6 relative z-10">
                         {steps.map((step, index) => (
                             <FadeIn key={index} delay={index * 150} className="h-full">
                                 <div className="flex flex-col h-full bg-white rounded-[2rem] border border-gray-100 shadow-lg overflow-hidden group hover:-translate-y-2 transition-transform duration-300">

@@ -10,7 +10,7 @@ export const PilotAppArchitecture: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-monimo-blue font-bold tracking-wider text-xl uppercase mb-3 block">Chapter 8. 기술 구현 전략</span>
+                        <span className="text-monimo-blue font-bold tracking-wider text-xl uppercase mb-3 block">Chapter 9. 기술 구현 전략</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight break-keep mb-6">
                             레거시 프리: <br className="md:hidden" />
                             신속한 검증을 위한 <span className="text-monimo-blue">독립형 파일럿 플랫폼</span>

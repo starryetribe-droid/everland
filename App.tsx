@@ -123,22 +123,31 @@ function App() {
         {/* New Page 14 */}
         <DemonHuntersConcept />
 
+        {/* Interim: Plan (Page 15) */}
+        <InterimSection
+          id="interim-plan"
+          title="Plan"
+          description="하루 완성 몰입형 체험"
+          pageNumber={15}
+          theme="blue"
+          label="Chapter 6"
+        />
+
         <HuntersJourney />
         <GeofenceSystem />
 
         {/* New Page 17 */}
         <DigitalRelay />
-
         <RhythmTraining />
-        <SocialChallenge />
         <NfcKeyring />
         <SingAlongAttack />
         <FinalePerformance />
+        <DualTrackStrategy />
         <ExpectedEffects />
         <FromEtribe />
-        <DualTrackStrategy />
         <PilotAppArchitecture />
         <TechnicalRequirements />
+
         <PilotBudget />
 
 

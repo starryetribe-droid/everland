@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const FromEtribe: React.FC = () => {
   return (
-    <SectionWrapper id="from-etribe" className="bg-white relative overflow-hidden" pageNumber={24}>
+    <SectionWrapper id="from-etribe" className="bg-white relative overflow-hidden" pageNumber={25}>
       <div className="max-w-7xl mx-auto px-6 h-full flex flex-col justify-center py-12">
 
         {/* Header Section */}
@@ -15,7 +15,7 @@ export const FromEtribe: React.FC = () => {
             viewport={{ once: false }}
             className="text-monimo-blue font-bold tracking-wider text-xl uppercase mb-3 block"
           >
-            Why ETRIBE?
+            Chapter.8 Why ETRIBE?
           </motion.div>
 
           <motion.h2
@@ -25,7 +25,7 @@ export const FromEtribe: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6"
           >
-            지속 가능한 <span className="text-monimo-blue">'경험 시스템'</span>을 설계합니다
+            이트라이브는<br />지속 가능한 <span className="text-monimo-blue">'경험 시스템'</span>을 설계합니다
           </motion.h2>
         </div>
 

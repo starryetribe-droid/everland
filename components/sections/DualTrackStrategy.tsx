@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export const DualTrackStrategy: React.FC = () => {
     return (
-        <SectionWrapper id="dual-track-strategy" className="bg-white relative overflow-hidden" pageNumber={25}>
+        <SectionWrapper id="dual-track-strategy" className="bg-white relative overflow-hidden" pageNumber={23}>
             <div className="max-w-[1440px] mx-auto px-6 py-12 w-full relative z-10 flex flex-col gap-16">
 
                 {/* 1. Analysis & Insight */}

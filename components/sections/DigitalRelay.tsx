@@ -6,13 +6,13 @@ import digitalRelayImage from '../../src/assets/images/digital_lantern_relay.png
 
 export const DigitalRelay: React.FC = () => {
     return (
-        <SectionWrapper id="digital-relay" className="bg-white relative overflow-hidden" pageNumber={17}>
+        <SectionWrapper id="digital-relay" className="bg-white relative overflow-hidden" pageNumber={18}>
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 2-2: Participation</span>
+                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 2: 이동</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             K-Death Hunter : 빛의 수호자
                         </h2>

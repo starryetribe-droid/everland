@@ -3,13 +3,20 @@ import { SectionWrapper } from './SectionWrapper';
 import { FadeIn } from '../ui/FadeIn';
 
 export const TechnicalRequirements: React.FC = () => {
-    const requirements = [
-        {
-            title: "Mobile Platform",
-            desc: "Unity 기반 개발로 고사양 AR 및 리듬 게임 성능 최적화",
-            icon: "📱",
-            color: "blue"
-        },
+    const mainReq = {
+        title: "Mobile Platform 구축 및 운영",
+        desc: [
+            "플랫폼의 서비스 플래닝",
+            "효율적인 구축 노하우",
+            "사용자 중심의 UX 설계",
+            "다양한 서비스 탑재 노하우",
+            "성능 최적화 등"
+        ],
+        icon: "📱",
+        color: "blue"
+    };
+
+    const subRequirements = [
         {
             title: "Game Engine",
             desc: "아이템(7종) 장착 시 점수/이펙트가 변화하는 버프 시스템 및 오디오 동기화 알고리즘",
@@ -44,34 +51,63 @@ export const TechnicalRequirements: React.FC = () => {
 
     return (
         <SectionWrapper id="technical-requirements" className="bg-white relative overflow-hidden" pageNumber={27}>
-            <div className="max-w-[1440px] mx-auto px-6 py-12 w-full relative z-10 flex flex-col justify-center h-full">
+            <div className="max-w-[1440px] mx-auto px-6 py-8 w-full relative z-10 flex flex-col justify-center h-full">
 
                 {/* Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-8">
                     <FadeIn>
-                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Chapter 9. 기술 구현 전략</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight break-keep mb-6">
-                            콘텐츠 유연성과 게이밍 성능을 동시에 확보하는<br />
-                            <span className="text-monimo-blue">6대 핵심 기술</span>
+                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-2 block">Chapter 10. 상세 기술 요구사항</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight break-keep mb-4">
+                            모바일 플랫폼의 유연성을 확보하고<br />컨트롤하는 필요 기술 요건
                         </h2>
                     </FadeIn>
                 </div>
 
-                {/* Content Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto w-full">
-                    {requirements.map((req, index) => (
-                        <FadeIn key={index} delay={index * 100} className="h-full">
-                            <div className="group bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex flex-col relative overflow-hidden">
-                                <div className={`absolute top-0 right-0 w-24 h-24 bg-${req.color}-500/5 rounded-bl-[80px] -z-0 group-hover:bg-${req.color}-500/10 transition-colors`}></div>
+                <div className="max-w-7xl mx-auto w-full flex flex-col gap-6 items-center justify-center flex-1">
 
-                                <div className="text-4xl mb-6">{req.icon}</div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">{req.title}</h3>
-                                <p className="text-gray-600 font-medium leading-relaxed break-keep">
-                                    {req.desc}
-                                </p>
+                    {/* Mobile Platform */}
+                    <FadeIn delay={100} className="w-full">
+                        <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#7730D0] relative overflow-hidden flex flex-col md:flex-row items-center md:items-start gap-8">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#7730D0]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+                            <div className="flex-shrink-0 bg-[#7730D0]/10 p-6 rounded-2xl backdrop-blur-sm">
+                                <span className="text-6xl">{mainReq.icon}</span>
                             </div>
-                        </FadeIn>
-                    ))}
+
+                            <div className="flex-1 text-center md:text-left z-10">
+                                <h3 className="text-3xl font-black mb-4 text-[#7730D0]">{mainReq.title}</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2">
+                                    {mainReq.desc.map((item, i) => (
+                                        <div key={i} className="flex items-center text-gray-700 font-bold text-lg">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-[#7730D0] mr-3"></div>
+                                            {item}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </FadeIn>
+
+                    {/* Sub Requirements */}
+                    <div className="flex flex-wrap justify-center gap-5 w-full">
+                        {subRequirements.map((req, index) => (
+                            <FadeIn key={index} delay={200 + (index * 100)} className="w-full md:w-[48%] lg:w-[32%]">
+                                <div className="group bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col relative overflow-hidden justify-center items-center text-center">
+                                    <div className={`absolute top-0 right-0 w-20 h-20 bg-${req.color}-500/5 rounded-bl-[60px] -z-0 group-hover:bg-${req.color}-500/10 transition-colors`}></div>
+
+                                    <div className="mb-4">
+                                        <span className="text-4xl">{req.icon}</span>
+                                    </div>
+                                    <h3 className="text-lg font-bold text-gray-900 leading-tight mb-2">{req.title}</h3>
+
+                                    <p className="text-gray-600 text-sm font-medium leading-relaxed break-keep">
+                                        {req.desc}
+                                    </p>
+                                </div>
+                            </FadeIn>
+                        ))}
+                    </div>
+
                 </div>
 
             </div>

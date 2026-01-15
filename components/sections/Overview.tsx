@@ -10,28 +10,77 @@ export const Overview: React.FC = () => {
             title: "Trend",
             desc: "글로벌 K-콘텐츠의 물결",
             icon: "fa-user-doctor",
-            id: "interim-1"
+            id: "interim-bg"
         },
         {
             part: "Chapter 2",
             title: "Objective",
             desc: "K-콘텐츠 경험의 허브",
             icon: "fa-chess-knight",
-            id: "interim-2"
+            id: "interim-obj"
         },
         {
             part: "Chapter 3",
-            title: "Concept",
-            desc: "글로벌 K-콘텐츠 몰입형 플랫폼",
+            title: "Market Insight",
+            desc: "시장 현황과 사업 필요성",
             icon: "fa-building",
-            id: "interim-3"
+            id: "interim-mkt"
         },
         {
             part: "Chapter 4",
             title: "Strategy",
             desc: "하이퍼 커넥티드 플랫폼",
             icon: "fa-gamepad",
-            id: "interim-4"
+            id: "interim-global"
+        },
+        {
+            part: "Chapter 5",
+            title: "Concept",
+            desc: "몰입형 플랫폼",
+            icon: "fa-vr-cardboard",
+            id: "interim-concept"
+        },
+        {
+            part: "Chapter 6",
+            title: "Plan",
+            desc: "하루 완성 몰입형 체험",
+            icon: "fa-map-location-dot",
+            id: "interim-plan"
+        },
+        {
+            part: "Chapter 7",
+            title: "Expected Effect",
+            desc: "기대효과",
+            icon: "fa-chart-line",
+            id: "expected-effects"
+        },
+        {
+            part: "Chapter 8",
+            title: "Why ETRIBE",
+            desc: "파트너십 강점",
+            icon: "fa-handshake",
+            id: "from-etribe"
+        },
+        {
+            part: "Chapter 9",
+            title: "Tech Strategy",
+            desc: "기술 구현 전략",
+            icon: "fa-microchip",
+            id: "pilot-app-architecture"
+        },
+        {
+            part: "Chapter 10",
+            title: "Requirements",
+            desc: "상세 기술 요구사항",
+            icon: "fa-list-check",
+            id: "technical-requirements"
+        },
+        {
+            part: "Chapter 11",
+            title: "Pilot Budget",
+            desc: "파일럿 예산",
+            icon: "fa-coins",
+            id: "pilot-budget"
         }
     ];
 
@@ -43,38 +92,39 @@ export const Overview: React.FC = () => {
     };
 
     return (
-        <SectionWrapper id="overview" className="bg-slate-800" pageNumber={1}>
+        <SectionWrapper id="overview" className="bg-slate-800" pageNumber={1} textColor="text-white/50">
             <div className="max-w-[1440px] mx-auto px-4 md:px-8 w-full h-full flex flex-col justify-center">
-                <div className="text-center mb-16">
+                <div className="text-center mb-6">
                     <FadeIn>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-                            Overview
+                            Index
                         </h2>
                     </FadeIn>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="max-w-4xl mx-auto w-full flex flex-col gap-2">
                     {parts.map((item, index) => (
-                        <FadeIn key={index} delay={index * 100}>
-                            <GlassCard
-                                className="px-4 py-8 h-full flex flex-col items-center text-center cursor-pointer hover:border-monimo-blue/30 hover:shadow-lg transition-all group relative overflow-hidden"
+                        <FadeIn key={index} delay={index * 30} className="w-full">
+                            <div
+                                className="group flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 hover:border-monimo-blue/50 transition-all cursor-pointer"
                                 onClick={() => scrollToSection(item.id)}
                             >
-                                {/* Background Decor */}
-                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-50"></div>
+                                <div className="flex items-center gap-4 md:gap-8 flex-1">
+                                    <span className="text-gray-400 font-bold text-xs md:text-sm uppercase tracking-wider w-20 md:w-24 flex-shrink-0 group-hover:text-monimo-blue transition-colors">{item.part}</span>
 
-                                <div className="mt-2 flex flex-col h-full w-full">
-                                    <span className="text-lg font-bold text-gray-400 mb-1 uppercase tracking-wider block order-1">{item.part}</span>
-
-                                    <h3 className="text-3xl font-black text-monimo-black mb-2 transition-colors order-2">
+                                    <h3 className="text-lg md:text-xl font-bold text-white flex-1 group-hover:text-monimo-blue transition-colors">
                                         {item.title}
                                     </h3>
 
-                                    <p className="text-lg font-medium text-gray-500 leading-tight whitespace-nowrap order-3 mt-auto tracking-tight">
+                                    <p className="hidden md:block text-gray-500 font-medium text-base text-right w-1/3">
                                         {item.desc}
                                     </p>
                                 </div>
-                            </GlassCard>
+
+                                <div className="ml-4 text-gray-600 group-hover:text-monimo-blue transition-colors">
+                                    <i className="fa-solid fa-arrow-right text-lg"></i>
+                                </div>
+                            </div>
                         </FadeIn>
                     ))}
                 </div>

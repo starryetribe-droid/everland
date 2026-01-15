@@ -13,7 +13,7 @@ export const SingAlongAttack: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <FadeIn>
-                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 4: 공동체 챌린지</span>
+                        <span className="text-[#DAA520] font-bold tracking-wider text-xl uppercase mb-3 block">Journey Phase 5: 공동체 챌린지</span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-monimo-black leading-tight break-keep mb-6">
                             떼창(Sing-along) Attack, 데시벨 챌린지
                         </h2>

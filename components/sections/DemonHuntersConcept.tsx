@@ -7,7 +7,7 @@ import uiRefImage from '../../src/assets/images/demon_hunters_ui_ref.png';
 
 export const DemonHuntersConcept: React.FC = () => {
     return (
-        <SectionWrapper id="demon-hunters-concept" className="bg-black relative overflow-hidden h-screen flex items-center justify-center" pageNumber={14}>
+        <SectionWrapper id="demon-hunters-concept" className="bg-black relative overflow-hidden h-screen flex items-center justify-center" pageNumber={14} textColor="text-white/50">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img src={posterImage} alt="Demon Hunters Background" className="w-full h-full object-cover opacity-60 blur-sm scale-105" />
