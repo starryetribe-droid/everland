@@ -3,6 +3,7 @@ import { SectionWrapper } from './SectionWrapper';
 import { FadeIn } from '../ui/FadeIn';
 
 import posterImage from '../../src/assets/images/demon_hunters_poster.jpg';
+import uiRefImage from '../../src/assets/images/demon_hunters_ui_ref.png';
 
 export const DemonHuntersConcept: React.FC = () => {
     return (
@@ -18,7 +19,7 @@ export const DemonHuntersConcept: React.FC = () => {
                 {/* Left: Poster Image (Clean) */}
                 <FadeIn className="w-full md:w-1/2 flex justify-center">
                     <div className="relative rounded-[2rem] overflow-hidden shadow-[0_0_50px_rgba(119,48,208,0.5)] border-2 border-[#7730D0]/30 group">
-                        <img src={posterImage} alt="Everland: The Last Defense Line of Demon Hunters" className="w-full max-w-[500px] h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" />
+                        <img src={uiRefImage} alt="Everland: The Last Defense Line of Demon Hunters" className="w-full max-w-[700px] h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" />
 
                         {/* Shimmer Effect */}
                         <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]"></div>
@@ -47,18 +48,7 @@ export const DemonHuntersConcept: React.FC = () => {
                         </p>
                     </FadeIn>
 
-                    <FadeIn delay={400}>
-                        <div className="grid grid-cols-2 gap-4 mt-8">
-                            <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 text-center">
-                                <h3 className="text-white font-bold text-lg mb-1">Genre</h3>
-                                <p className="text-gray-300">Immersive RPG</p>
-                            </div>
-                            <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 text-center">
-                                <h3 className="text-white font-bold text-lg mb-1">Theme</h3>
-                                <p className="text-gray-300">Dark Fantasy K-Pop</p>
-                            </div>
-                        </div>
-                    </FadeIn>
+
                 </div>
 
             </div>

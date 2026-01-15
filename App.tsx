@@ -21,6 +21,10 @@ import { FinalePerformance } from './components/sections/FinalePerformance';
 import { ExpectedEffects } from './components/sections/ExpectedEffects';
 import { NfcKeyring } from './components/sections/NfcKeyring';
 import { FromEtribe } from './components/sections/FromEtribe';
+import { DualTrackStrategy } from './components/sections/DualTrackStrategy';
+import { PilotAppArchitecture } from './components/sections/PilotAppArchitecture';
+import { TechnicalRequirements } from './components/sections/TechnicalRequirements';
+import { PilotBudget } from './components/sections/PilotBudget';
 
 // import { B2BPivot } from './components/sections/B2BPivot';
 import { InterimSection } from './components/sections/InterimSection';
@@ -132,6 +136,10 @@ function App() {
         <FinalePerformance />
         <ExpectedEffects />
         <FromEtribe />
+        <DualTrackStrategy />
+        <PilotAppArchitecture />
+        <TechnicalRequirements />
+        <PilotBudget />
 
 
 
